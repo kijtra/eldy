@@ -1,7 +1,7 @@
 <?php
 include(__DIR__.'/autoload.php');
 
-$schema = new Eldy\Schema(array(// data seting if you need
+$schema = new Eldy\Schema(array(// data setting if you need
     'date' => '2013-09-14T21:30',
     'postal' => '80209',
 ));
@@ -28,6 +28,7 @@ $schema->Event(function() {
         $this->sameAs = 'http://en.wikipedia.org/wiki/Typhoon_(American_band)';
     });
 
+    // you can use same property name
     $this->performer = $this->MusicGroup(function() {
         $this->name = 'RadiationCity';
         $this->sameAs = 'http://en.wikipedia.org/wiki/Radiation_City';
